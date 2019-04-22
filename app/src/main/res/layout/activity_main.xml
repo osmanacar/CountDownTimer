@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#009CF8"
     tools:context=".MainActivity">
 
     <EditText
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/edit_text_input"
         android:layout_toEndOf="@id/edit_text_input"
+        android:background="#00F30B"
         android:text="Set" />
 
     <TextView
@@ -40,7 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_countdown"
         android:layout_centerHorizontal="true"
-        android:text="start" />
+        android:text="start"
+        android:background="#00F30B"
+        />
 
     <Button
         android:id="@+id/button_reset"
@@ -50,8 +54,11 @@
         android:layout_marginStart="11dp"
         android:layout_toEndOf="@id/button_start_pause"
         android:text="reset"
+        android:background="#00F30B"
         android:visibility="invisible"
         tools:visibility="visible" />
+
+
 
 
 </RelativeLayout>

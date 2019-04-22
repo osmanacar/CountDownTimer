@@ -32,6 +32,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        AdView adView = (AdView) findViewById(R.id.adView);
+//        adView = new AdView(this);
+//        adView.setAdSize(AdSize.BANNER);
+//        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+//                .build();
+//        adView.loadAd(adRequest);
+
         identifyMember();
         processProgram();
 
@@ -43,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         mButtonStartPause = (Button) findViewById(R.id.button_start_pause);
         mButtonReset = (Button) findViewById(R.id.button_reset);
         mButtonSet = (Button) findViewById(R.id.button_set);
+
+
     }
 
     public void processProgram() {
